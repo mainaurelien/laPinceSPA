@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Pince</title>
+</head>
+<body>
+    <header>
+      <h1>LaPince</h1>
+      <nav>
+        <button onclick="navigate('login')">Se connecter</button>
+        <button onclick="navigate('register')">S'inscrire</button>
+      </nav>
+    </header>
+  
+    <main id="app"></main>
+  
+    <template id="login-template">
+      <form id="login-form">
+        <h2>Connexion</h2>
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="password" name="password" placeholder="Mot de passe" required />
+        <button type="submit">Connexion</button>
+      </form>
+    </template>
+  
+    <template id="register-template">
+      <form id="register-form">
+        <h2>Inscription</h2>
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="password" name="password" placeholder="Mot de passe" required />
+        <button type="submit">Créer un compte</button>
+      </form>
+    </template>
+  
+    <script src="main.js"></script>
+  </body>
+  
+</html>
